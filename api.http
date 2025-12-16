@@ -1,0 +1,16 @@
+@host=localhost:8089
+
+###
+
+POST http://{{host}}/requisicao
+Content-Type: application/json
+
+{
+"pagamento_id": "asd",
+"cliente_id" : "123",
+"valor": 100
+}
+
+###
+
+GET http://{{host}}/requisicao/14
