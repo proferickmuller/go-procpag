@@ -57,5 +57,7 @@ func main() {
 		reqEndpoint.GET("/:id", getPedPag)
 	}
 
+	router.StaticFile("openapi.yml", "docs/openapi.yml")
+
 	router.Run(":8089")
 }
